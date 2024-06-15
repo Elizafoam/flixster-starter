@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import Header from './Components/Header/Header';
 import './App.css';
 
 const App = () => {
   return (
     <div className="App">
-      <h1>Flixster</h1>
+      <Header />
     </div>
   )
 }
