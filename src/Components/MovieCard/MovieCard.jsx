@@ -1,11 +1,12 @@
 import React from "react";
+import "./MovieCard.css";
 
-const MovieCard = () => {
+const MovieCard = ({title, imgURL, rating}) => {
     return (
-        <div className="movie-card">
-            <h1>Movie Title</h1>
-            <img src="" alt="" />
-            <p>Rating</p>
+        <div className="MovieCard">
+            <img src={imgURL} alt="Movie Poster Image" />
+            <h1>{title}</h1>
+            <p>Rating: {rating}</p>
         </div>
     )
 }

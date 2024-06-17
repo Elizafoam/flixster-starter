@@ -11,6 +11,7 @@
 
 .logo {
     display: flex;
+    align-items: center;
     gap: 1.25rem;
 }
 
@@ -22,6 +23,19 @@ h1 {
 img {
     width: 5rem;
     height: 5rem;
+}
+
+#search {
+    padding: 0.5rem;
+    width: 14rem;
+    height: 3.5rem;
+    font-size: 1.25rem;
+}
+
+.right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .dropdown {

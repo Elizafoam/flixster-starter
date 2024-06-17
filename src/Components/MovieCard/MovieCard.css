@@ -1,0 +1,15 @@
+.MovieCard h1 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.MovieCard img {
+    width: 17rem;
+    height: auto;
+    padding: 1rem;
+}
+
+p {
+    margin: 0;
+    font-size: 1.35rem;
+}
