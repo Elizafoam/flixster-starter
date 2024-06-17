@@ -8,6 +8,9 @@ const App = () => {
     <div className="App">
       <Header />
       <MovieList />
+      <footer className='footer'>
+        <div>Copyright © Elizafoam 2024</div>
+      </footer>
     </div>
   )
 }

@@ -6,3 +6,53 @@
     gap: 2rem;
     color: white;
 }
+
+.drop-button {
+    background-color: #D1603D;
+    font-size: 1.5rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem;
+}
+
+.button {
+    background-color: #D1603D;
+    font-size: 1.5rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem;
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: aliceblue;
+    width: 10.7rem;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 1rem;
+}
+
+a:hover {
+    background-color: bisque;
+}
+
+.dropdown:hover .drop-content {
+    display: block;
+}
+
+#search {
+    padding: 0.5rem;
+    width: 14rem;
+    height: 3.5rem;
+    font-size: 1.25rem;
+}

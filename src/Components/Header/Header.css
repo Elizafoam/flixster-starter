@@ -1,17 +1,23 @@
 .Header {
-    padding: 4rem;
-    margin: 0;
     color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle p{
+    font-size: 1.75rem;
+}
+
+.Head {
+    margin: 0;
 
     display: flex;
-    gap: 2rem;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
+.left {
     display: flex;
-    align-items: center;
     gap: 1.25rem;
 }
 
@@ -20,57 +26,43 @@ h1 {
     margin: 0;
 }
 
-img {
+.right img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.left img {
     width: 5rem;
     height: 5rem;
 }
 
-#search {
-    padding: 0.5rem;
-    width: 14rem;
-    height: 3.5rem;
-    font-size: 1.25rem;
-}
 
 .right {
     display: flex;
-    gap: 1rem;
+    gap: 0;
     align-items: center;
 }
 
-.dropdown {
-    position: relative;
-}
-
-.drop-button {
-    background-color: #D1603D;
-    font-size: 1.75rem;
+.Head .button {
+    padding: 1rem;
+    background-color: transparent;
     border: none;
-    padding: 1rem;
-    border-radius: 4px;
 }
 
-.drop-content {
-    display: none;
-    position: absolute;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    background-color: aliceblue;
-    width: 10.7rem;
+.banner {
+    text-align: left;
     margin: auto;
+    padding: 18rem 10rem;
+    background-image: url("src/assets/insideout.png");
+    background-position: top;
+    background-size: cover;
+    border-radius: 2rem;
 }
 
-a {
-    text-decoration: none;
-    display: block;
-    color: black;
-    padding: 1rem;
+.banner h1 {
+    font-size: 9rem;
 }
 
-a:hover {
-    background-color: bisque;
-}
-
-.dropdown:hover .drop-content {
-    display: block;
+.banner p {
+    font-size: 3rem;
 }

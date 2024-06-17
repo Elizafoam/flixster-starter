@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 2rem;
   
 }
 
@@ -13,14 +14,7 @@
   padding: 20px;
 }
 
-.button {
-  background-color: #D1603D;
-  font-size: 1.5rem;
-  border: none;
-  padding: 1rem;
-  border-radius: 4px;
-  margin: 1rem;
-}
+
 
 @media (max-width: 600px) {
   .movie-card {
@@ -35,4 +29,13 @@
   .search-bar form {
     flex-direction: column;
   }
+}
+
+footer {
+  font-size: 1.7818727725rem;
+  color: white;
+  background-color: #dde5f723;
+  width: 100vw;
+  padding: 0.75rem;
+  left: 0;
 }
