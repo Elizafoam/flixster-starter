@@ -22,7 +22,7 @@ const MovieList = () => {
     useEffect(() => {
         async function fetchMovies() {
             console.log(URL);
-            const res = await fetch(URL + `&page=${page}`);
+            const res = await fetch(URL);
             const data = await res.json();
             setMovies(data.results);
             console.log(movies);
@@ -69,6 +69,7 @@ const MovieList = () => {
 
     // nav button
     const toggleSearch = () => {
+        setURL(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}`)
         setOnFilter(false);
         setNowPlaying(false);
         setOnSearch(true);
@@ -77,10 +78,10 @@ const MovieList = () => {
     }
 
     const togglePlaying = () => {
+        setURL(`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}`);
         setOnFilter(false);
         setNowPlaying(true);
         setOnSearch(false);
-        setURL(`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}`);
     }
 
     const toggleFilter = () => {
@@ -157,17 +158,29 @@ const MovieList = () => {
             <button className='button' onClick={addMovies}>Load More</button>
             {selectedMovie && (
                 <Modal show={selectedMovie != null} onClose={() => setSelectedMovie(null)}>
-                    <h1>{selectedMovie["title"]}</h1>
-                    <img src={`https://image.tmdb.org/t/p/original${selectedMovie["backdrop_path"]}`} alt="Movie Image" width={500} className="backdrop"/>
-                    <p>Release Date: {selectedMovie["release_date"]}</p>
-                    <p>Overview: {selectedMovie["overview"]}</p>
-                    <div className='genres'>
-                        <p>Genres:</p>
-                        {selectedMovie["genre_ids"].map((id) => (
-                            <p>{getGenreName(id)}</p>
-                        ))}
+                    <div className='modal-top'>
+                        <div className='genre'>
+                        <img src={`https://image.tmdb.org/t/p/original${selectedMovie["backdrop_path"]}`} alt="Movie Image" width={500} className="backdrop"/>
+                        <div className='genres'>
+                            <p><b>Genres:</b></p>
+                            {selectedMovie["genre_ids"].map((id) => (
+                                <p>{getGenreName(id)}</p>
+                            ))}
+                        </div>
+                        </div>
+                        
+                        <div className='movie-info'>
+                            
+                            <h1>{selectedMovie["title"]}</h1>
+                            <div className='times'>
+                            <p>{selectedMovie["release_date"]}</p>
+                            <p> • {details["runtime"]} mins</p>
+                            </div>
+                            <p><b>Overview: </b></p>
+                            <p>{selectedMovie["overview"]}</p>
+                        </div>
                     </div>
-                    <p>Runtime: {details["runtime"]} mins</p>
+    
                     
                 </Modal>
             )}

@@ -12,9 +12,10 @@
   }
   
   .modal-content {
-    background: white;
+    background-color: rgb(91, 102, 112);
+    color: white;
     padding: 2rem;
-    border-radius: 5px;
+    border-radius: 2rem;
     position: relative;
     width: 80%;
   }
@@ -31,4 +32,16 @@
     align-items: center;
     padding: 2rem;
     gap: 1rem;
+  }
+
+  .close {
+    font-size: 3rem;
+    background-color: transparent;
+    border: none;
+  }
+
+  .close:hover {
+    font-size: 3rem;
+    background-color: transparent;
+    border: none;
   }
