@@ -6,7 +6,6 @@ Submitted by: **Elizabeth Johnson**
 
 Estimated time spent: **20** hours spent in total
 
-Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 
 ### Application Features
 
@@ -28,7 +27,7 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
   - [X] Users can view more details about a movie in a popup, such as runtime in minutes, backdrop poster, release date, genres, and/or an overview.
 - [X] **Sorting Options**
   - [X] Users can click on a filter by drop down to sort product by type (alphabetic, release date, rating).
-- [ ] **Layout**
+- [X] **Layout**
   - [X] Website displays header, banner, search, movie grid, about, contact, and footer section.
 
 #### STRETCH FEATURES
@@ -47,27 +46,25 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 
 ### Walkthrough Video
 
-`TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video or gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after adding walkthrough video)
-
-`ADD_EMBEDDED_CODE_HERE`
+![Walkthrough](./src/assets/Unit3Vid.gif)
 
 ### Reflection
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+    - Yes but more review with the fetch stuff would be good
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-Add your response here
+    - I would add more features and deploy the project. 
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+    - Overall it went well but I could use up all the time which would be good
 
 ### Open-source libraries used
 
-- N/A
+    - Used TMDB API
 
 ### Shout out
 
