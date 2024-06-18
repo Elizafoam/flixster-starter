@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState, useEffect} from 'react';
 import "./Header.css";
 
 const Header = () => {
+    
     return (
         <div className="Header">
             <div className="Head">

@@ -2,6 +2,7 @@
     color: white;
     display: flex;
     flex-direction: column;
+    padding: 2rem;
 }
 
 .middle p{

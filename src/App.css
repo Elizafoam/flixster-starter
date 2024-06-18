@@ -1,7 +1,5 @@
 .App {
-  text-align: center;
-  padding: 2rem;
-  
+  text-align: center; 
 }
 
 .App-header {
@@ -13,8 +11,6 @@
   color: white;
   padding: 20px;
 }
-
-
 
 @media (max-width: 600px) {
   .movie-card {
@@ -35,7 +31,6 @@ footer {
   font-size: 1.7818727725rem;
   color: white;
   background-color: #dde5f723;
-  width: 100vw;
   padding: 0.75rem;
   left: 0;
 }
