@@ -45,6 +45,7 @@ const MovieList = () => {
           })
           .catch(err => console.error(err));
         setSelectedMovie(movie);
+        console.log(details)
     }
 
     function checkClick(e, movie){

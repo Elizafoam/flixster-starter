@@ -162,7 +162,7 @@ h1 {
 }
 
 .backdrop {
-    width: 45vw;
+    width: 40rem;
     border-radius: 15px;
 }
 
@@ -193,15 +193,19 @@ h1 {
 }
 
 .genres {
-    margin-top: 2rem;
+    margin-top: 1rem;
     color: white;
 }
 
 .Modal h1 {
-    font-size: 10rem;
+    font-size: 3.5rem;
 }
 
 .Modal p {
-    margin-left: 3rem;
-    font-size: 4rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 510px) {
+    
 }
