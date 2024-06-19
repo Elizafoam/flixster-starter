@@ -158,7 +158,7 @@ const MovieList = () => {
             </div>
             <button className='button' onClick={addMovies}>Load More</button>
             {selectedMovie && (
-                <Modal show={selectedMovie != null} onClose={() => setSelectedMovie(null)}>
+                <Modal className="modalList" show={selectedMovie != null} onClose={() => setSelectedMovie(null)}>
                     <div className='modal-top'>
                         <div className='genre'>
                         <img src={`https://image.tmdb.org/t/p/original${selectedMovie["backdrop_path"]}`} alt="Movie Image" width={500} className="backdrop"/>

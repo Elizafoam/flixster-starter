@@ -206,6 +206,27 @@ h1 {
     font-size: 1.5rem;
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 700px) {
+    .banner {
+        padding: 2rem 2rem;
+    }
+
+
+    .banner p {
+        font-size: 2rem;
+    }
+
+    .backdrop {
+        width: 27rem;
+        border-radius: 15px;
+    }
+
+    .Modal p {
+        font-size: 0.8rem;
+    }
     
+    .modal-top {
+        display: flex;
+        flex-direction: column;
+    }
 }
