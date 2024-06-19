@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./MovieCard.css";
 
-const MovieCard = ({key, title, imgURL, rating, onClick}) => {
+const MovieCard = ({title, imgURL, rating, onClick}) => {
     const [heart, setHeart] = useState("♡");
     const [watch, setWatched] = useState("Watch");
 

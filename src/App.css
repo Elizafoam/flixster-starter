@@ -34,3 +34,17 @@ footer {
   padding: 0.75rem;
   left: 0;
 }
+
+.about {
+  background-color: rgb(45, 62, 106);
+  padding: 1rem;
+}
+
+.about *{
+  max-width: 65ch;
+  color: white;
+  margin: 0.25rem auto;
+}
+.about h4 {
+  font-size: 2rem;
+}

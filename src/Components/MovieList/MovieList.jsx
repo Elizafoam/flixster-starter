@@ -15,9 +15,10 @@ const MovieList = () => {
     const [onSearch, setOnSearch] = useState(false);
     const [onFilter, setOnFilter] = useState(false);
 
-    const [selectedMovie, setSelectedMovie] = useState(null)
+    const [selectedMovie, setSelectedMovie] = useState(null);
     const [genres, setGenres] = useState([]);
     const [details, setDetails] = useState([]);
+    const [video, setVideo] = useState("");
     
     useEffect(() => {
         async function fetchMovies() {
@@ -44,8 +45,17 @@ const MovieList = () => {
               setDetails(response)
           })
           .catch(err => console.error(err));
+
+        fetch(`https://api.themoviedb.org/3/movie/${movie["id"]}/videos?api_key=${apiKey}`)
+          .then(response => response.json())
+          .then(response => {
+                let val = response.results.filter((video)=> video.name == "Official Trailer")
+                setVideo(val[0]["key"])
+          })
+          .catch(err => console.error(err));
         setSelectedMovie(movie);
         console.log(details)
+        console.log(video)
     }
 
     function checkClick(e, movie){
@@ -94,7 +104,7 @@ const MovieList = () => {
     const getGenreName = (id) => {
         return genres.find((obj) => obj.id == id).name;
     }
-
+    
     return (
         <div className="MovieList">
             <div className="Header">
@@ -162,16 +172,16 @@ const MovieList = () => {
                     <div className='modal-top'>
                         <div className='genre'>
                         <img src={`https://image.tmdb.org/t/p/original${selectedMovie["backdrop_path"]}`} alt="Movie Image" width={500} className="backdrop"/>
+                        <iframe className='backdrop' width="560" height="315" src={`https://www.youtube.com/embed/${video}`} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         <div className='genres'>
                             <p><b>Genres:</b></p>
-                            {selectedMovie["genre_ids"].map((id) => (
+                            { selectedMovie["genre_ids"].map((id) => (
                                 <p>{getGenreName(id)}</p>
-                            ))}
+                            ))
+                            }
                         </div>
-                        </div>
-                        
-                        <div className='movie-info'>
-                            
+                        </div>                        
+                        <div className='movie-info'>                            
                             <h1>{selectedMovie["title"]}</h1>
                             <div className='times'>
                             <p>{selectedMovie["release_date"]}</p>
@@ -180,9 +190,7 @@ const MovieList = () => {
                             <p><b>Overview: </b></p>
                             <p>{selectedMovie["overview"]}</p>
                         </div>
-                    </div>
-    
-                    
+                    </div>                   
                 </Modal>
             )}
         </div>

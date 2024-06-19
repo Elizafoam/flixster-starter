@@ -32,8 +32,8 @@ Estimated time spent: **20** hours spent in total
 
 - [ ] **Deployment**
   - [ ] Website is deployed via Render.
-- [ ] **Embedded Movie Trailers**
-  - [ ] Within the popup displaying a movie's details, users can play the movie trailer.
+- [X] **Embedded Movie Trailers**
+  - [X] Within the popup displaying a movie's details, users can play the movie trailer.
 - [X] **Watched Checkbox**
   - [X] For each movie displayed, users can mark the movie as watched.
 - [X] **Favorite Button**
@@ -45,6 +45,11 @@ Estimated time spent: **20** hours spent in total
 ### Walkthrough Video
 
 ![Walkthrough](./src/assets/Unit3Vid.gif)
+
+![Walkthrough 2](./src/assets/Unit3Vid2.gif)
+
+![About](./src/assets/about.png)
+
 
 ### Reflection
 
