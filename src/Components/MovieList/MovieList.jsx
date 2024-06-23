@@ -110,7 +110,7 @@ const MovieList = () => {
             <div className="Header">
                 <div className="Head">
                     <div className="left">
-                        <img src="public/assets/logo.png" alt="clapperboard" />
+                        <img src="/assets/logo.png" alt="clapperboard" />
                         <h1>Flixster</h1>
                     </div>
                     <div className="middle">
@@ -118,10 +118,10 @@ const MovieList = () => {
                     </div>
                     <div className="right">
                         <button className='button'>
-                            <img src="public/assets/search.png" alt="search" onClick={toggleSearch}/>
+                            <img src="/assets/search.png" alt="search" onClick={toggleSearch}/>
                         </button>
                         <button className="button">
-                            <img src="public/assets/filter.png" alt="filter" onClick={toggleFilter} />
+                            <img src="/assets/filter.png" alt="filter" onClick={toggleFilter} />
                         </button>
                     </div>
                 </div>

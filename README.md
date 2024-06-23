@@ -44,11 +44,11 @@ Estimated time spent: **20** hours spent in total
 
 ### Walkthrough Video
 
-![Walkthrough](./src/assets/Unit3Vid.gif)
+![Walkthrough](/assets/Unit3Vid.gif)
 
-![Walkthrough 2](./src/assets/Unit3Vid2.gif)
+![Walkthrough 2](/assets/Unit3Vid2.gif)
 
-![About](./src/assets/about.png)
+![About](/assets/about.png)
 
 
 ### Reflection
