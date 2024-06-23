@@ -133,7 +133,7 @@ h1 {
     text-align: left;
     margin: auto;
     padding: 18rem 10rem;
-    background-image: url("src/assets/insideout.png");
+    background-image: url("public/assets/insideout.png");
     background-position: top;
     background-size: cover;
     border-radius: 2rem;
